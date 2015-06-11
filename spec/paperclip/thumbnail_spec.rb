@@ -43,6 +43,10 @@ describe Paperclip::Thumbnail do
     [["600x600>", "434x66"],
      ["400x400>", "400x61"],
      ["32x32<", "434x66"],
+     ["20000@", "362x55"],
+     ["20000@>", "362x55"],
+     ["40000@", "512x77"],
+     ["40000@>", "434x66"],
      [nil, "434x66"]
     ].each do |args|
       context "being thumbnailed with a geometry of #{args[0]}" do
